@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"sp_da1\startup_stm32f103xb.o"
+"sp_da1\main.o"
+"sp_da1\stm32f1xx_it.o"
+"sp_da1\stm32f1xx_hal_msp.o"
+"sp_da1\stm32f1xx_hal_gpio_ex.o"
+"sp_da1\stm32f1xx_hal_rtc.o"
+"sp_da1\stm32f1xx_hal_rtc_ex.o"
+"sp_da1\stm32f1xx_hal_tim.o"
+"sp_da1\stm32f1xx_hal_tim_ex.o"
+"sp_da1\stm32f1xx_hal.o"
+"sp_da1\stm32f1xx_hal_rcc.o"
+"sp_da1\stm32f1xx_hal_rcc_ex.o"
+"sp_da1\stm32f1xx_hal_gpio.o"
+"sp_da1\stm32f1xx_hal_dma.o"
+"sp_da1\stm32f1xx_hal_cortex.o"
+"sp_da1\stm32f1xx_hal_pwr.o"
+"sp_da1\stm32f1xx_hal_flash.o"
+"sp_da1\stm32f1xx_hal_flash_ex.o"
+"sp_da1\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "SP_DA1\SP_DA1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "SP_DA1.map" -o SP_DA1\SP_DA1.axf

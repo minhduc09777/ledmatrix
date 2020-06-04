@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"p4_donsac\startup_stm32f103xb.o"
+"p4_donsac\main.o"
+"p4_donsac\stm32f1xx_it.o"
+"p4_donsac\stm32f1xx_hal_msp.o"
+"p4_donsac\stm32f1xx_hal_gpio_ex.o"
+"p4_donsac\stm32f1xx_hal_tim.o"
+"p4_donsac\stm32f1xx_hal_tim_ex.o"
+"p4_donsac\stm32f1xx_hal.o"
+"p4_donsac\stm32f1xx_hal_rcc.o"
+"p4_donsac\stm32f1xx_hal_rcc_ex.o"
+"p4_donsac\stm32f1xx_hal_gpio.o"
+"p4_donsac\stm32f1xx_hal_dma.o"
+"p4_donsac\stm32f1xx_hal_cortex.o"
+"p4_donsac\stm32f1xx_hal_pwr.o"
+"p4_donsac\stm32f1xx_hal_flash.o"
+"p4_donsac\stm32f1xx_hal_flash_ex.o"
+"p4_donsac\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "P4_DONSAC\P4_DONSAC.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "P4_DONSAC.map" -o P4_DONSAC\P4_DONSAC.axf

@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"p4_full\startup_stm32f103xb.o"
+"p4_full\main.o"
+"p4_full\stm32f1xx_it.o"
+"p4_full\stm32f1xx_hal_msp.o"
+"p4_full\stm32f1xx_hal_gpio_ex.o"
+"p4_full\stm32f1xx_hal_tim.o"
+"p4_full\stm32f1xx_hal_tim_ex.o"
+"p4_full\stm32f1xx_hal.o"
+"p4_full\stm32f1xx_hal_rcc.o"
+"p4_full\stm32f1xx_hal_rcc_ex.o"
+"p4_full\stm32f1xx_hal_gpio.o"
+"p4_full\stm32f1xx_hal_dma.o"
+"p4_full\stm32f1xx_hal_cortex.o"
+"p4_full\stm32f1xx_hal_pwr.o"
+"p4_full\stm32f1xx_hal_flash.o"
+"p4_full\stm32f1xx_hal_flash_ex.o"
+"p4_full\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "P4_FULL\P4_FULL.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "P4_FULL.map" -o P4_FULL\P4_FULL.axf
