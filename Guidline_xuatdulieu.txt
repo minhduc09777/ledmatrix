@@ -1,0 +1,8 @@
+R1  G1  B1                               R2   G2   B2
+
+cap hang = 0 --> 15 (0-->15, 16-->31)
+
+
+hang = 0
+
+GPIO = mangxuatled[cap hang thu nhat(0, 16)][bit thu 0 cua R, G, B trong][gia tri cua R1  G1  B1 R2   G2   B2]
